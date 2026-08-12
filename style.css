@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    color: white;
+    background-color: rgb(28, 26, 26);
+    padding: 1rem;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    background-color: rgb(255, 255, 91);
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: monospace;
+    border-radius: 15px;
+    padding: 1rem;
+    color: black;
+
+}
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    background-color: #833AB4;
+    padding: 10px;
+    border-radius: 15px;
+}
+img {
+    width: 25em;
+}
+.title {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (width <= 700px){
+    .title {
+        display: inline-grid;
+        align-content: center;
+        width: 100%;
+    }
+}
+@media (width <= 500px) {
+    .nav-items {
+        display: flex;
+        flex-direction: column !important;
+        gap: 5px !important; 
+    }    
+    .nav-items a {
+        text-align: center;
+    }
+    .title {
+        position: absolute;
+    }
+    .footer {
+        align-items: start !important;
+        position: relative;
+        top: 40em;
+        width: 100% !important;
+    }
+    .secureAPI {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+}
+@media (width <= 910px) {
+    .footer {
+        width: 80% !important;
+    }
+}
+.column-left {
+    font-size: 1.2em;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 8vh;
+    align-items: end;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 20%;
+}
+.footer a {
+    color: rgb(144, 143, 143);
+}
+.secureAPI {
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.credits a {
+    color: rgb(144, 143, 143);
+}
+
+.subs-levels {
+    display: none;
+}
+
+.subs-wrapper {
+    margin: 100px;
+}
+
+.subs-wrapper:hover .subs-levels {
+    display: block;
+}
+.nav-items {
+    display: flex;
+    height: 40px;
+    gap: 3px;
+}
